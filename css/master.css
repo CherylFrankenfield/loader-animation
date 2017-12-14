@@ -1,0 +1,58 @@
+.container {
+  height: 100vh;
+
+}
+
+.loader {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+}
+
+.logo img {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  z-index: 3;
+}
+
+.bounce1 {
+  width: 70px;
+  height: 70px;
+  top: -4px;
+  left: 50px;
+}
+
+.bounce2 {
+  width: 100px;
+  height: 100px;
+  top:-20px;
+  left: 36px;
+}
+
+.bounce3 {
+  width: 160px;
+  height: 160px;
+  top: -47px;
+  left: 7px;
+}
+
+.bounce1, .bounce2, .bounce3 {
+  border-radius: 50%;
+  background-color: palevioletred;
+  opacity: .5;
+  position: absolute;
+  animation: wave 3s infinite ease-in-out;
+}
+
+@keyframes wave {
+  0% { transform: scale(.5);
+  }
+  50% {transform: scale(1);
+  }
+  100% { opacity: 0;
+  }
+}
